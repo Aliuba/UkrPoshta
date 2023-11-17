@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=Rubik+Pixels&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fjalla+One&family=Indie+Flower&family=Open+Sans&family=Rubik+Pixels&family=Rubik:wght@700&family=Sedgwick+Ave+Display&display=swap');
+
+        body {
+            margin: 0;
+        }
+
+        .header_one {
+            width: 100vw;
+            height: 8.8vh;
+            background-color: #FFFFFF;
+        }
+
+        .logo {
+            width: 186px;
+            height: 50px;
+            position: absolute;
+            top: 25px;
+            left: 135px;
+        }
+
+        .header_two {
+            width: 100vw;
+            height: 5.9vh;
+            background-color: #FFFFFF;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #99A2AA;
+            font-size: 16px;
+            font-family: 'Rubik Regular', sans-serif;
+            margin-right: 29.6px;
+        }
+
+        nav {
+            position: absolute;
+            left: 135px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            /*text-decoration-style: solid;*/
+            text-decoration-color: dodgerblue;
+
+        }
+
+        .tabpanel {
+            width: 100vw;
+            height: 43vh;
+            background-color: #FEC524;
+            position: absolute;
+            top: 140px;
+        }
+
+        .panel {
+            width: 570px;
+            height: 230px;
+            position: absolute;
+            left: 135px;
+        }
+
+        h2 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 44px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        .panel > p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            color: #0E2F4B;
+        }
+
+        .panel > div {
+            height: 52px;
+        }
+
+        .div-services-block {
+            width: 1200px;
+            height: 212px;
+            position: absolute;
+            left: 120px;
+            top: -158px;
+            display: flex;
+        }
+
+        #name, #name1 {
+            width: 310px;
+            height: 19px;
+            position: absolute;
+            left: 30px;
+            top: 26px;
+            color: #757575;
+            font-family: 'Rubik Regular', sans-serif;
+            font-size: 16px;
+        }
+
+        .form_input {
+            width: 570px;
+            height: 72px;
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            }
+
+        input {
+            border: white;
+        }
+
+        .SVG {
+            position: absolute;
+            top: 132px;
+            left: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .SVG1 {
+            width: 270px;
+            height: 80px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            margin-right: 30px;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+        }
+
+        .SVG1 > p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            color: #99A2AA;
+            position: absolute;
+            top: 20px;
+        }
+
+        .SVG1 > img {
+            position: absolute;
+            top: 30px;
+        }
+
+        .div-services-block-main {
+            position: absolute;
+            top: 590px;
+            width: 100vw;
+            height: 78vh;
+            background-color: #F8F8F8;
+        }
+
+        .col-xl-4 {
+            width: 400px;
+            height: 630px;
+            position: absolute;
+            top: 100px;
+            left: 120px;
+        }
+
+        .col-xl-4 > div > h2 {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 48px;
+        }
+
+        .col-xl-4 > div {
+            height: 57px;
+        }
+
+        .col-xl-4 > article {
+            position: absolute;
+            top: 184px;
+            color: #0E2F4B;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+
+        }
+
+        .SVG-Link {
+            display: flex;
+            width: 370px;
+            height: 180px;
+            position: absolute;
+            left: 535px;
+            top: 100px;
+
+        }
+
+        .SVG-Link > div > h4 {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+
+        .SVG-Link > div > p {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px
+        }
+
+        .div-export-code-block {
+            background: #042C4B;
+            width: 100vw;
+            height: 64vh;
+            top: 1390px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div-export-code-wrapper {
+            width: 81vw;
+            height: 38vh;
+        }
+
+        .col-xl-7 {
+            width: 49vw;
+            height: 38vh;
+        }
+
+        .col-xl-7 > h2 {
+            color: #F8F8F8;
+            font-family: 'Rubik', sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px;
+            margin-bottom: 36px;
+        }
+
+        .col-xl-7 > p {
+            color: #99A2AA;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 44px;
+        }
+
+        .col-xl-7 > div {
+            width: 21vw;
+            height: 8vh;
+            border-radius: 10px;
+            background: #FDC13D;
+            margin-left: 30px;
+        }
+
+        .col-xl-7 > div > p {
+            color: #0E2F4B;
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80px; /* 400% */
+        }
+
+        .div-services-block-second {
+            background: #F8F8F8;
+            width: 100vw;
+            height: 86vh;
+            position: absolute;
+            top: 2050px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div-container {
+            width: 83vw;
+            height: 76vh;
+        }
+
+        .div-container-tabpanel {
+            width: 81vw;
+            height: 21vh;
+            border-radius: 10px;
+            background: #FDC13D;
+        }
+
+        .heading4 {
+            display: flex;
+            width: 68vw;
+            height: 6vh;
+            flex-direction: column;
+            margin-left: 75px;
+            margin-top: 52px;
+            align-content: space-between;
+        }
+
+        .heading4 > h4 {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+            margin-bottom: 0;
+        }
+
+        .heading4 > p {
+            color: #0E2F4B;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 187.5% */
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+
+        .heading4 > h5 {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+            margin-top: 0;
+        }
+
+        .heading2 {
+            width: 32vw;
+            height: 6vh;
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px;
+            margin-top: 121px;
+        }
+
+        .heading2-SVG {
+            display: flex;
+
+
+        }
+
+        .heading2-SVG1 {
+            width: 270px;
+            height: 270px;
+            margin-right: 30px;
+            margin-top: 10px;
+        }
+
+        .heading2-SVG1 > h4 {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+            margin-left: 30px;
+            margin-bottom: 13px;
+        }
+
+        .heading2-SVG1 > p {
+            color: #0E2F4B;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            margin-left: 30px;
+            margin-top: 0;
+        }
+        .zip-code-block{
+            background: #0E2F4B;
+            width: 100vw;
+            height: 62vh;
+            position: absolute;
+            top: 2930px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-xl-12{
+            width: 83vw;
+            height: 36vh;
+
+        }
+        .col-xl-12>p{
+            color: #99A2AA;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 187.5% */
+            margin: 0;
+        }
+        .form_input_2{
+
+            position: absolute;
+            top: 38vh;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            width: 505px;
+            height: 78px;
+            padding: 0 30px;
+
+        }
+        button{
+            border-radius: 10px;
+            background: #FDC13D;
+            display: flex;
+            width: 248.98px;
+            height: 80px;
+            padding: 28px 86.725px 28px 87.05px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 545px;
+            color: #0E2F4B;
+
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80px; /* 400% */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header class="header_one">
+        <div class="logo">
+            <img src="site-ua-logo.svg%20fill.png" alt="logo">
+        </div>
+    </header>
+    <header class="header_two">
+        <nav>
+            <a href="#">Тренінг </a>
+            <a href="#">Послуги </a>
+            <a href="#">Тарифи </a>
+            <a href="#">Відділення </a>
+            <a href="#">Філателія </a>
+            <a href="#">Кар'єра </a>
+            <a href="#">Бізнесу </a>
+        </nav>
+    </header>
+    <div class="tabpanel">
+        <div class="panel">
+            <div><h2><b>Оформлюйте</b></h2></div>
+            <div style="position: absolute; top: 60px"><h2><b>передплату!</b></h2></div>
+            <p style="position: absolute; top: 200px">Досхочу вибирайте й призи вигравайте</p>
+        </div>
+    </div>
+    <div class="div-services-block-main">
+        <div class="div-services-block">
+            <form class="form_input">
+                <input type="text" id="name" name="username" placeholder="Введіть номер відправлення" required>
+            </form>
+            <div class="SVG">
+                <div class="SVG1"><img style="left: 55px" src="SVG.png" alt="logo">
+                    <p style="left: 108px">Розрахувати</p></div>
+                <div class="SVG1"><img style="left: 355px" src="SVG%20(1).png" alt="logo">
+                    <p style="left: 408px">Оформити</p></div>
+                <div class="SVG1"><img style="left: 655px" src="SVG%20(2).png" alt="logo">
+                    <p style="left: 708px">Знайти сервіс</p></div>
+                <div class="SVG1"><img style="left: 955px" src="SVG%20(3).png" alt="logo">
+                    <p style="left: 1008px">Переплатити</p></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4">
+            <div><h2><b>Поштові</b></h2></div>
+            <div style="position: absolute; top: 61px"><h2><b>послуги</b></h2></div>
+            <article>
+                <p>Замовляйте доставку у найвіддаленіші куточки</p>
+                <p>України, відправляйте й отримуйте посилки з</p>
+                <p>усього світу і навпаки.</p>
+                <p>Виберіть доставку, яка найкраще підійде вам</p>
+                <p>за термінами пересилання і вартістю.</p>
+            </article>
+        </div>
+        <div class="SVG-Link">
+            <div>
+                <h4>Доставка<br> по Україні</h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+        <div class="SVG-Link" style="top: 310px">
+            <div>
+                <h4>Доставка з інтернет-<br> магазинів</h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+        <div class="SVG-Link" style="top: 520px">
+            <div>
+                <h4>Доставка<br> по світу</h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+        <div class="SVG-Link" style="left: 935px">
+            <div>
+                <h4>Доставка<br> документів</h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+        <div class="SVG-Link" style="left: 935px; top: 310px">
+            <div>
+                <h4>Доставка ліків</h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+        <div class="SVG-Link" style="left: 935px; top: 520px">
+            <div>
+                <h4>Доставка в <br> Україну </h4>
+                <p>Докладніше ></p>
+            </div>
+        </div>
+    </div>
+    <div class="div-export-code-block">
+        <div class="div-export-code-wrapper">
+            <div class="col-xl-7">
+                <h2>Започаткуйте успішний<br>міжнародний бізнес!</h2>
+                <p>Продавайте товари за кордон через інтернет<br>— нам довіряють 25 тисяч підприємців</p>
+                <div>
+                    <p>Перейти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-services-block-second">
+        <div class="div-container">
+            <div class="div-container-tabpanel">
+                <div class="heading4">
+                    <h4>Укрпошта надала благодійної та гуманітарної допомоги на понад 150 мільйонів<br>
+                        гривень</h4>
+                    <p>У 2022 році, коли росія вдалася до повномасштабного вторгнення на територію нашої держави,
+                        Укрпошта, окрім основних…</p>
+                    <h5>Докладніше ></h5>
+                </div>
+            </div>
+            <div class="heading2">
+                Фінансові послуги
+            </div>
+            <div class="heading2-SVG">
+                <div class="heading2-SVG1">
+                    <h4>Грошові <br> перекази</h4>
+                    <p>Докладніше</p>
+                </div>
+                <div class="heading2-SVG1">
+                    <h4>Міжнародні <br> перекази</h4>
+                    <p>Докладніше</p>
+                </div>
+                <div class="heading2-SVG1">
+                    <h4>Страхування</h4>
+                    <p>Докладніше</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zip-code-block">
+        <div class="col-xl-12">
+            <div class="heading2" style="margin-top: 0; margin-bottom: 36px">
+                <h2 >Знайти індекс</h2>
+            </div>
+                <p>Поштовий індекс — це код із 5 цифр, який допомагає пришвидшити сортування та доставку відправлень. Поштовий індекс мають всі відділення</p>
+                <p>Укрпошти та всі населені пункти України.</p>
+            <form class="form_input_2">
+                <input type="text" id="name1"  name="username" placeholder="Введіть назву населеного пункту" required>
+                <button>Знайти</button>
+            </form>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
